@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Poppins, Arial, sans-serif;
+    background: linear-gradient(135deg, #0d47a1, #1976d2);
+    color: white;
+    text-align: center;
+}
+
+/* Container */
+.container {
+    margin-top: 80px;
+}
+
+/* Title */
+.title {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+/* Subtitle */
+.subtitle {
+    margin-top: -10px;
+    font-size: 18px;
+    opacity: 0.85;
+}
+
+/* Card */
+.card {
+    margin: 40px auto;
+    padding: 30px;
+    width: 350px;
+    background: white;
+    color: #333;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+}
+
+/* Start Button */
+.start-btn {
+    background: #0d47a1;
+    color: white;
+    padding: 14px 25px;
+    border: none;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%;
+    transition: 0.3s ease;
+}
+
+.start-btn:hover {
+    background: #1565c0;
+}
+
+/* Video player */
+.video-box {
+    margin-top: 40px;
+}
+
+video {
+    width: 70%;
+    border-radius: 12px;
+    box-shadow: 0 4px 25px rgba(0,0,0,0.4);
+}
+
+/* Session Heading */
+.session-heading {
+    margin-top: 40px;
+    font-size: 32px;
+}

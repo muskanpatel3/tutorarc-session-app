@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>TutorArc Live Classroom</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/style.css">
+
+    <style>
+        /* Required for footer to stay bottom */
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Extra Creative Styling */
+        .fade-in {
+            animation: fadeIn 1s ease-in-out forwards;
+            opacity: 0;
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+
+        .pulse {
+            animation: pulse 1.8s infinite ease-in-out;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        /* ===== NAVBAR STYLING ===== */
+        .navbar {
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            padding: 15px 40px;
+
+            background: linear-gradient(90deg, #4c6ef5, #15aabf);
+            color: white;
+
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+            z-index: 999;
+        }
+
+        /* Logo */
+        .navbar .logo {
+            font-size: 26px;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        /* Navbar Links */
+        .nav-links a {
+            margin-left: 25px;
+            text-decoration: none;
+            color: white;
+            font-size: 17px;
+            font-weight: 500;
+
+            transition: 0.3s ease;
+        }
+
+        /* Hover Effect */
+        .nav-links a:hover {
+            color: #e3faff;
+            border-bottom: 2px solid white;
+            padding-bottom: 3px;
+        }
+
+        /* To prevent overlap & push footer down */
+        .container {
+            flex: 1;
+            padding-top: 120px;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background: #f1f3f5;
+            color: #333;
+            font-size: 14px;
+            
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar fade-in">
+        <div class="logo">TutorArc</div>
+        <div class="nav-links">
+            <a href="/">Home</a>
+            <a href="#">Sessions</a>
+            <a href="#">Profile</a>
+        </div>
+    </nav>
+
+    <div class="container fade-in">
+
+        <h1 class="title">Start Your Live Teaching Session</h1>
+        <p class="subtitle">Create a secure classroom link instantly and invite students in one click.</p>
+
+        <div class="card">
+            <img src="https://cdn-icons-png.flaticon.com/512/747/747376.png" height="80" class="pulse" />
+
+            <h2 style="margin-top: 10px;">Live Class Session</h2>
+            <p style="opacity: .7; margin-top: -5px;">
+                A unique real-time teaching session will be generated.
+            </p>
+
+            <button id="startBtn" class="start-btn">
+                🚀 Start New Live Session
+            </button>
+        </div>
+
+        <footer class="footer">
+            © 2025 TutorArc — Powered by Node.js, Express, MongoDB
+        </footer>
+
+    </div>
+
+    <script src="/main.js"></script>
+
+</body>
+
+</html>
